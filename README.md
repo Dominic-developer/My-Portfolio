@@ -11,4 +11,4 @@ MAIN FEATURES:
  - Contact section with a live contact form
 
 
-![My Portfolio Screenshot](img/Screenshot Portfolio Preview.png)
+![My Portfolio Screenshot](img/Screenshot-Portfolio-Preview.png)
