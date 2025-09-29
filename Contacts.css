@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacts {
+    box-sizing: border-box;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    margin-top: 20px;
+    background: #ccc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #000;
+    padding: 1em 2em 2em 2em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1 {
+    text-decoration: underline;
+}
+
+nav {
+    margin-right: 1.5em;
+    display: flex;
+    gap: 2em;
+}
+nav {
+    display: flex;
+    gap: 2em;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    transform: scale(1.1, 1.1);
+    border-radius: 10px;
+}
+a:active {
+    color: blue;
+    transform: scale(0.95, 0.95);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+p {
+    margin-bottom: 20px;
+    color: #444444;
+}
+
+input, textarea {
+    background-color: transparent;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 6px 6px rgba(79, 70, 229, 0.3);
+    outline: none;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+button {
+    margin: auto;
+    width: 90px;
+    background: #4f46e5;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+    background: #4338ca;
+    transform: scale(1.02);
+    box-shadow: 0 0 5px #2318a0;
+}
+button:active {
+    transform: scale(0.95);
+}
+
+.email-link {
+    margin-bottom: 2em;
+}
+.email-link a {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+.email-link a:hover {
+    color: #4338ca;
+    border-bottom: 2px solid #4338ca;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.social-links a {
+    font-size: 1.8rem;
+    color: #4f46e5;
+    transition: color 0.3s, transform 0.2s;
+}
+.social-links a:hover {
+    color: #4338ca;
+    transform: translateY(-3px);
+}
+img {
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 600px) {
+    #contacts {
+        padding: 1rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}

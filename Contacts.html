@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contacts</title>
+    <link rel="stylesheet" href="Contacts.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section id="contacts">
+        <header>
+            <h1>Contact Me</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Projects.html">Projects</a>
+            </nav>
+        </header>
+        
+        <p>Have a project idea or feedback? Leave a message below, or reach out to me directly
+            by email or via my social media platforms below.
+        </p>
+        <form action="https://formspree.io/f/mnnbkoad" method="POST" id="contact-form">
+            <label for="yourName">Name</label>
+            <input type="text" id="yourName" name="yourName" placeholder="Name" required>
+            <span class="error" id="nameError"></span>
+
+            <label for="yourEmail">Email</label>
+            <input type="email" id="yourEmail" name="yourEmail" placeholder="Email" required>
+            <span class="error" id="emailError"></span>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" cols="60" placeholder="Leave your message, feedback or suggestion." required></textarea>
+            <span class="error" id="messageError"></span>
+
+            <button id="submit-btn" type="submit">Submit</button>
+        </form>
+        
+        
+        <p class="email-link">
+            Email me directly at:
+            <a href="mailto:dominickipsang1@gmail.com">dominickipsang1@gmail.com</a>
+        </p>
+
+        <div class="social-links">
+            <a href="https://github.com/Dominic-developer">
+                <img src="img/291716_github_logo_social network_social_icon.png" alt="Dominic's GitHub Profile">
+            </a>
+            <a href="https://www.linkedin.com/in/dominic-kipsang-0139442a9/">
+                <img src="img/5296501_linkedin_network_linkedin logo_icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/dominic_kipsang._/">
+                <img src="img/5296765_camera_instagram_instagram logo_icon.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/DominicKip24654">
+                <img src="img/5296514_bird_tweet_twitter_twitter logo_icon.png" alt="X (Twitter)">
+            </a>
+        </div>
+    </section>
+</body>
+</html>
