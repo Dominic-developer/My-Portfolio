@@ -11,6 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const emailError = document.getElementById('emailError');
     const messageError = document.getElementById('messageError');
 
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrolIntoView({
+                behaviour: 'smooth'
+            });
+        });
+    });
 
     form.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -37,6 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!emailRegex.test(email)) {
             emailError.textContent = 'Please enter a valid email address';
             hasError = true;
+            contacts.style.height = '620px';
+            contacts.style.margin = '10px auto';
         }
 
         if(message.length < 5) {
@@ -49,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!hasError) {
             alert('Feedback submitted successfully!');
             submitBtn.textContent = 'Submitted';
+            submitBtn.innerText = 'Submitted';
             form.submit();
         }
     })
